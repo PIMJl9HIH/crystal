@@ -1,0 +1,283 @@
+//warranty
+.content-support-warranty {
+	padding: 0;
+	border-left: 1px solid #e0e0e0;
+}
+.form_support-warranty{
+
+	.form__block {
+		padding: 25px 30px;
+		color: #636363;
+		font-size: 14px;
+
+		&_top {
+			padding-top: 0;
+			padding-bottom: 0;
+			margin-bottom: 20px;
+		}
+		&__title {
+			font-family: $Roboto-B;
+			font-size: 14px;
+			margin-bottom: 20px;
+			color: #1b1b1b;
+		}
+
+		p + p {
+			margin-top: 20px;
+		}
+		
+		&_general {
+			.block__list{
+				list-style: circle inside;
+				padding-left: 20px;
+			}
+			.block__item{
+				list-style: initial;
+				margin-bottom: 20px;
+				line-height: 1.2;
+			}
+		}
+		.normal-use {
+			p {
+				margin-top: 0;
+			}
+		}
+
+		.table-technical-specif {
+			table {
+				width: 100%;
+				border: 1px solid #e0e0e0;
+				border-collapse: collapse;
+
+				tr:nth-child(2n) {
+					background: #f7f7f7; 
+				} 
+				td {
+					padding-left: 29px;
+					padding-top: 18px;
+					padding-bottom: 18px;
+					border: 1px solid #e0e0e0;
+					&:first-of-type{
+						text-transform: capitalize;
+					}
+				}
+			}
+		}
+		.cleaning{
+			p {
+				margin-bottom: 20px;
+			}
+			ul{
+				list-style: circle inside;
+				padding-left: 20px;
+			}
+			li{
+				list-style: initial;
+				line-height: 1.2;
+			}
+		}
+
+	}
+	.form__block + .form__block{
+		border-bottom: 1px solid #e0e0e0;
+		&_last{
+			border-bottom: 0;
+		}
+	}
+
+	.do-donts {
+
+		display: flex;
+
+		&__item{
+			flex: 1 calc(50% - 25px);
+			margin-left: 50px;
+			&:nth-of-type(odd){
+				margin-left: 0;
+			}
+			&__title{
+				font-size: 14px;
+				line-height: 1;
+				font-family: $Roboto-B;
+				margin-bottom: 20px;
+				text-transform: uppercase;
+				&.green {
+					color: #48b214;
+				}
+				&.red {
+					color: #e82d28;
+				}
+			}
+			&__list{
+				list-style: circle inside;
+				padding-left: 20px;
+			}
+			&__el {
+				margin-bottom: 20px;
+				list-style: initial;
+			}
+		}
+	}
+
+	.certify-block {
+		text-align: right;
+		color: #1b1b1b;
+		margin-right: 30px;
+	}
+	.btn-block {
+		text-align: right;
+		margin-right: 30px;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+//form_support-warranty-active
+.form_support-warranty-active{
+
+	.label-block {
+		.hint{
+			margin-left: 5px;
+		}
+	}
+
+	.form__block{
+		.add{
+			display: block;
+			margin-bottom: 50px;
+			margin-top: 30px;
+			color: $purple;
+			font-size: 14px;
+			line-height: 1;
+		}
+	}
+
+	.select-date{
+		position: relative;
+
+		background-image: url('../img/icons/date.png');
+		background-position: right 20px  center;
+		background-repeat: no-repeat;
+	}
+
+	.certify-block {
+		text-align: right;
+		font-size: 14px;
+	}
+
+}
+
+.form__block_add {
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	.form__row {
+		flex: 1 calc(50% - 15px);
+		position: relative;
+		&:first-of-type{
+			.delete{
+				display: none;
+			}
+		}
+		&:nth-of-type(even){
+			margin-left: 30px;
+		}
+		&:last-of-type{
+			flex: 0 calc(50% - 15px);
+		}
+	}
+	.delete{
+		top: 25px;
+		right: -10px;
+	}
+}
+
+
+// form_support-warranty-success
+.form_support-warranty-success{
+	
+	.form__block_top{
+		display: flex;
+		justify-content: center;
+
+		.form__title{
+			margin-bottom: 30px;
+			display: inline-block;
+			position: relative;
+			text-align: center;
+			&:before{
+				content: '';
+				position: absolute;
+				left: -50px;
+				width: 32px;
+				height: 32px;
+				display: inline-block;
+				background-image: url('../img/icons/check-green.png');
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+		}
+	}
+
+	.form__block-text {
+		font-size: 14px;
+		color: #636363;
+		margin-bottom: 25px;
+		.thankyou {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		p + p {
+			margin-top: 20px;
+		}
+	}
+	
+	.form__block-contact {
+		display: flex;
+		justify-content: center;
+
+		.contact__item{
+			display: flex;
+			align-items: center;
+			margin-left: 70px;
+			&:nth-of-type(odd){
+				margin-left: 0;
+			}
+			.contact__flag-pic{
+				width: 56px;
+				img{
+					display: block;
+					width: 100%;
+				}
+			}
+		}
+		.contact__block-info {
+			margin-left: 20px;
+			font-size: 14px;
+			.bold{
+				margin-bottom: 2px;
+			}
+		}
+	}
+	.btn-block{
+		text-align: center;
+		padding-top: 50px;
+		.back{
+			display: block;
+			margin-top: 15px;
+			color: $purple;
+		}
+	}
+}
+
+

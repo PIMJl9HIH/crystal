@@ -1,0 +1,19 @@
+
+
+// start main less
+@import "general/normalize";
+@import "general/fonts";
+@import "general/settings";
+@import "general/mixins";
+
+// sections
+@import "pages/register";
+@import "pages/contact";
+@import "pages/home";
+@import "pages/products";
+@import "pages/support";
+@import "pages/_myAccount";
+@import "pages/_programs";
+@import "pages/_features";
+
+@import "pages/mediaQuery";

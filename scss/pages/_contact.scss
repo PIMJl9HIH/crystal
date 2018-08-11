@@ -1,0 +1,62 @@
+.content-presentation {
+
+	&_contact{
+		.content-presentation__left{
+			background: #000 url(../img/content/old-man.png) no-repeat;
+		}
+		.content-presentation__right {
+			background-image: url('../img/content/register/contact-pic.png'),
+			url('../img/content/presentation-bg.jpg');
+			background-position: bottom right 120px, top left ;
+		}
+	}
+}
+
+.sidebar_contact {
+	.sidebar__title {
+		font-family: $Roboto-B;
+		font-size: 16px;
+		padding: 0;
+		color: $purple;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	.sidebar__item{
+		color: #636363;
+		background-color: #fff;
+		&:first-of-type{
+			padding-top: 50px;
+		}
+		& + .sidebar__item {
+			margin-top: 30px;
+		}
+
+		&:last-of-type{
+			padding-bottom: 50px;
+		}
+	}
+
+	.sidebar__block-info {
+		& + .sidebar__block-info {
+			margin-top: 15px;
+		}
+	}
+}
+
+textarea {
+	border: 1px solid #d6d8da;
+}
+
+.contact_form {
+	.form__title {
+		
+		font-size: 28px;
+		font-family: $Roboto-B;
+	}
+
+	.contact-body_text{
+		color: #636363;
+		font-size: 14px;
+		margin-top: 15px;
+	}
+}
